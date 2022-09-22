@@ -1,6 +1,8 @@
 import "./styles.css";
 
 const populationTable = document.getElementById("my-table");
+const populationTablebody = document.getElementById("my-tablebody");
+
 
 getData();
 
@@ -97,8 +99,9 @@ async function getData() {
       trTwo.appendChild(tdThree);
       trTwo.appendChild(tdFour);
 
-      populationTable.appendChild(trTwo);
+      populationTablebody.appendChild(trTwo);
     }
+    populationTable.appendChild(populationTablebody);
     document.body.appendChild(populationTable);
     //reference for creating buildTable(): https://stackoverflow.com/questions/47999155/how-to-create-html-table-rows-from-multiple-arrays-of-data-in-javascript
   }
