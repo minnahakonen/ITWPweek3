@@ -66,7 +66,7 @@ async function getData() {
     let thTwo = document.createElement("th");
     thTwo.innerHTML = "Population";
     let thThree = document.createElement("th");
-    thThree.innerHTML = "Employment amount";
+    thThree.innerHTML = "Employment";
     let thFour = document.createElement("th");
     thFour.innerHTML = "Employment-%";
     trOne.appendChild(thOne);
